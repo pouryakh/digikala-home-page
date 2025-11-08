@@ -1,0 +1,26 @@
+.digiclub {
+  &__content {
+    &-items {
+      @include Responsive(minl) {
+        width: 100%;
+        flex-direction: column;
+      }
+    }
+    &-logo {
+      @include Responsive(minl) {
+        transform: rotate(90deg);
+        padding: 0 !important;
+      }
+      &-bg {
+        @include Responsive(minl) {
+          width: 100% !important;
+        }
+      }
+    }
+    &-item {
+      &-img {
+        width: 58%;
+      }
+    }
+  }
+}

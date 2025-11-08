@@ -1,0 +1,11 @@
+.suggest {
+  &__content {
+    &-item {
+      min-width: 15rem;
+    }
+    &-img {
+      min-width: 8rem;
+      max-width: 9rem;
+    }
+  }
+}

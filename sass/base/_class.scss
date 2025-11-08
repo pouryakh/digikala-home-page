@@ -1,0 +1,62 @@
+//! -------------- width options --------------//
+
+.container80 {
+  width: 85%;
+  margin: auto;
+  @include Responsive(minl) {
+    width: 98vw;
+  }
+}
+
+//!  -------------- Flex class ----------------- //
+
+.flex-center {
+  @include centerizetag();
+}
+
+.flex-between {
+  @include centerizetag($justify: space-between);
+}
+
+.flex-around {
+  @include centerizetag($justify: space-around);
+}
+
+//! ------------- Position class ----------------- //
+
+.pos-center {
+  @include midposition();
+}
+
+//! ---------------- Font-size class --------------------- //
+
+.fs-1 {
+  font-size: $fs-1 !important;
+}
+.fs-2 {
+  font-size: $fs-2 !important;
+}
+.fs-3 {
+  font-size: $fs-3 !important;
+}
+.fs-4 {
+  font-size: $fs-4 !important;
+}
+.fs-5 {
+  font-size: $fs-5 !important;
+}
+.fs-6 {
+  font-size: $fs-6 !important;
+}
+
+//! ----------------- Line breaker class -------------------- //
+
+.maxline-1 {
+  @include linebraker(1);
+}
+.maxline-2 {
+  @include linebraker();
+}
+.maxline-3 {
+  @include linebraker(3);
+}

@@ -1,0 +1,18 @@
+.buy {
+  &__content {
+    @include Responsive(minl) {
+      flex-direction: column;
+    }
+
+    &-item {
+      @include Responsive(minl) {
+        border: none !important;
+      }
+    }
+  }
+  &__contents {
+    @include Responsive(mid) {
+      border: none !important;
+    }
+  }
+}

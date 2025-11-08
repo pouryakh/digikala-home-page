@@ -1,0 +1,25 @@
+.smarket {
+  &__content {
+    &-off {
+      width: 12rem;
+    }
+    &-item {
+      width: 10rem;
+      height: 10rem;
+      &-img {
+        min-width: 7rem;
+        max-width: 8rem;
+        height: auto;
+      }
+    }
+    &-more {
+      width: 20rem;
+      height: auto;
+    }
+    &-bg {
+      @include Responsive(minl) {
+        display: none;
+      }
+    }
+  }
+}

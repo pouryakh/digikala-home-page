@@ -1,0 +1,44 @@
+.slider {
+  cursor: grab;
+  max-height: 40rem;
+  position: relative;
+  overflow: hidden;
+
+  &__img {
+    @include Responsive(max) {
+      min-height: 268px;
+      object-fit: cover;
+    }
+  }
+
+  &__pagination {
+    position: absolute;
+    bottom: 2rem;
+  }
+  &__btns {
+    position: absolute;
+    bottom: 3rem;
+    right: 4rem;
+    width: 8rem;
+    height: 5rem;
+    @include Responsive(max) {
+      display: none;
+    }
+  }
+  &__btn {
+    color: $subtitle;
+    width: 3.25rem;
+    height: 3.25rem;
+    border: solid 1px $subtitle;
+    border-radius: 100%;
+    background-color: $white;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  & svg {
+    height: 50%;
+    width: 50%;
+  }
+}

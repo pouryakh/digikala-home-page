@@ -1,0 +1,57 @@
+.story {
+  cursor: grab;
+  &__content {
+    @include Responsive(minl) {
+      width: 98vw;
+      margin: 0 auto;
+    }
+  }
+
+  &__item {
+    max-width: 9rem;
+    margin-left: 1rem;
+
+    @include Responsive(mid) {
+      max-width: 11rem;
+    }
+    @include Responsive(minl) {
+      max-width: 12rem;
+    }
+    &-img {
+      width: 8.5rem;
+      height: 8.5rem;
+      padding: 0.25rem;
+      @include Responsive(mid) {
+        width: 10.5rem;
+        height: 10.5rem;
+      }
+      @include Responsive(minl) {
+        width: 11.5rem;
+        height: 11.5rem;
+      }
+    }
+  }
+
+  &__btn {
+    background-color: $white;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    color: $subtitle;
+    @include Responsive(minl) {
+      display: none;
+    }
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  & svg {
+    display: none !important;
+  }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2rem !important;
+}

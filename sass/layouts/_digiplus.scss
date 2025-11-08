@@ -1,0 +1,36 @@
+.digiplus {
+  &__container {
+    @include Responsive(mid) {
+      border-radius: 0% !important;
+    }
+  }
+  &__content {
+    @include Responsive(mid) {
+      flex-direction: column !important;
+    }
+    &-item {
+      min-width: 7rem;
+      max-width: 8rem;
+      height: auto;
+    }
+    &-r {
+      @include Responsive(mid) {
+        width: 100%;
+      }
+    }
+    &-l {
+      @include Responsive(mid) {
+        width: 100%;
+      }
+    }
+    &-bg {
+      width: 75%;
+      @include Responsive(max) {
+        width: 39%;
+      }
+      @include Responsive(mid) {
+        width: 35%;
+      }
+    }
+  }
+}

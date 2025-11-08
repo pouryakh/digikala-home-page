@@ -1,0 +1,13 @@
+.mostsell {
+  &__content {
+    @include Responsive(mid) {
+      border: none !important;
+    }
+  }
+  &__swiper {
+    &-items {
+      width: 36% !important;
+      cursor: grab;
+    }
+  }
+}

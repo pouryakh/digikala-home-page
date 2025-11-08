@@ -1,0 +1,9 @@
+.articles {
+  &__content {
+    &-items {
+      @include Responsive(minl) {
+        flex-direction: column;
+      }
+    }
+  }
+}

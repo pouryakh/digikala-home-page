@@ -1,0 +1,12 @@
+.brands {
+  &__item {
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    &:hover {
+      transform: scale(110%);
+    }
+  }
+  &__img {
+    max-width: 6rem;
+  }
+}

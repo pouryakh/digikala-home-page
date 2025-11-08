@@ -1,0 +1,61 @@
+.header {
+  &__bg {
+    &-img {
+      @include Responsive(minl) {
+        min-height: 40px;
+        object-fit: cover;
+      }
+    }
+  }
+  &__search {
+    &-logo {
+      @include Responsive(minl) {
+        display: none;
+      }
+    }
+
+    &-input {
+      outline: none;
+
+      @include Responsive(mid) {
+        width: 40vw;
+      }
+
+      @include Responsive(minl) {
+        width: 98vw;
+        margin-bottom: 0.5rem;
+      }
+    }
+    &-left {
+      @include Responsive(minl) {
+        display: none;
+      }
+    }
+    &-buttom {
+      transition: all ease-in-out 0.5s;
+      &:hover {
+        cursor: pointer;
+        background-color: $gray;
+        transform: scale(105%);
+      }
+    }
+    &-line {
+      width: 0.2rem;
+      height: 2.5rem;
+      background-color: $gray;
+    }
+  }
+  &__navbar {
+    @include Responsive(minl) {
+      display: none;
+    }
+
+    &-item {
+      transition: all ease-in-out 0.1s;
+      &:hover {
+        cursor: pointer;
+        transform: translateY(-20%) scale(110%);
+      }
+    }
+  }
+}
